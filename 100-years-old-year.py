@@ -3,6 +3,13 @@
 name = input ("Enter your name: ")
 age = input ("Enter your age: ")
 
-year100 = 2022 + (100 - int(age))
+import datetime
+
+today = datetime.datetime.now()
+
+#accessing the year attribute
+year = today.year
+
+year100 = year + (100 - int(age))
 
 print(name, "will be 100 years old in ", year100)
